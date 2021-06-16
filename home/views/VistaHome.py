@@ -2,8 +2,8 @@ from PyQt5.QtWidgets import QWidget, QGridLayout, QPushButton, QSizePolicy
 
 #from listaclienti.views.VistaListaClienti import VistaListaClienti
 from listadipendenti.views.VistaListaDipendenti import VistaListaDipendenti
-#from listaprenotazioni.views.VistaListaPrenotazioni import VistaListaPrenotazioni
-#from listaordini.views.VistaListaOrdini import VistaOrdine
+from listaprenotazioni.views.VistaListaPrenotazioni import VistaListaPrenotazioni
+from listaordine.views.VistaListaOrdine import VistaListaOrdini
 #from listamagazzino.views.VistaListaMagazzino import VistaListaMagazzino
 #from listafornitori.views.VistaListaFornitori import VistaListaFornitori
 
@@ -13,11 +13,11 @@ class VistaHome(QWidget):
         super(VistaHome, self).__init__(parent)
         grid_layout = QGridLayout()
 
-        #grid_layout.addWidget(self.get_generic_button("Lista Ordini"), 0, 0)
+        grid_layout.addWidget(self.get_generic_button("Lista Ordini", self.go_lista_Ordini), 0, 0)
         #grid_layout.addWidget(self.get_generic_button("Lista magazzino"), 0, 1)
         #grid_layout.addWidget(self.get_generic_button("Lista Clienti"), 1, 0)
-        grid_layout.addWidget(self.get_generic_button("Lista Dipendenti", self.go_lista_dipendenti), 1, 1)
-        #grid_layout.addWidget(self.get_generic_button("Lista Prenotazioni"), 2, 0)
+        grid_layout.addWidget(self.get_generic_button("Lista Dipendenti", self.go_lista_dipendenti), 0, 1)
+        grid_layout.addWidget(self.get_generic_button("Lista Prenotazioni", self.go_lista_prenotazioni), 1, 0)
         #grid_layout.addWidget(self.get_generic_button("Lista fornitori"), 2, 1)
 
         self.setLayout(grid_layout)
@@ -33,9 +33,9 @@ class VistaHome(QWidget):
         button.clicked.connect(on_click)
         return button
 
-    #def go_lista_Ordini(self):
-       # self.vista_lista_ordini = VistaListaOrdini()
-       # self.vista_lista_ordini.show()
+    def go_lista_Ordini(self):
+        self.vista_lista_ordini = VistaListaOrdini()
+        self.vista_lista_ordini.show()
 
     #def go_lista_clienti(self):
       #  self.vista_lista_clienti = VistaListaClienti()
@@ -45,9 +45,9 @@ class VistaHome(QWidget):
         self.vista_lista_dipendenti = VistaListaDipendenti()
         self.vista_lista_dipendenti.show()
 
-   # def go_lista_prenotazioni(self):
-    #    self.vista_lista_prenotazioni = VistaListaPrenotazioni()
-     #   self.vista_lista_prenotazioni.show()
+    def go_lista_prenotazioni(self):
+        self.vista_lista_prenotazioni = VistaListaPrenotazioni()
+        self.vista_lista_prenotazioni.show()
 
     #def go_lista_magazzino(self):
      #   self.vista_lista_magazzino= VistaListaMagazzino()
