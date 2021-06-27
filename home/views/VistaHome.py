@@ -15,7 +15,7 @@ class VistaHome(QWidget):
 
         grid_layout.addWidget(self.get_generic_button("Lista Ordini", self.go_lista_Ordini), 0, 0)
         #grid_layout.addWidget(self.get_generic_button("Lista magazzino"), 0, 1)
-        #grid_layout.addWidget(self.get_generic_button("Lista Clienti"), 1, 0)
+        #grid_layout.addWidget(self.get_generic_button("Lista Cliente"), 1, 0)
         grid_layout.addWidget(self.get_generic_button("Lista Dipendenti", self.go_lista_dipendenti), 0, 1)
         #grid_layout.addWidget(self.get_generic_button("Lista Prenotazioni", self.go_lista_prenotazioni), 1, 0)
         #grid_layout.addWidget(self.get_generic_button("Lista fornitori"), 2, 1)
