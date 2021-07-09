@@ -8,7 +8,7 @@ if __name__ == '__main__':
     #istanziamento per iniziare un'applicazione
     app = QApplication(sys.argv)
     #creo un oggetto della classe importata
-    vista_home = VistaHome()
+    vista_home = VistaHome(
     # serve a mostrare a schermo la finestra vista home
     vista_home.show()
     #esegue l'applicazione
