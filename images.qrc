@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>texture5.jpg</file>
+    <file>texture4.jpg</file>
+    <file>logoRistorante.png</file>
+    <file>texture2.jfif</file>
+    <file>texture.jpg</file>
+  </qresource>
+</RCC>
