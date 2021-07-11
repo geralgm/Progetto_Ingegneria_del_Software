@@ -1,5 +1,5 @@
 import sys #Modulo che fornisce l'accesso ad alcune variabili , in questo caso sys.exit
-from PyQt5.QtWidgets import QApplication
+from PyQt5.QtWidgets import QApplication,QWidget
 
 from home.views.GUI_Home import Home  #importa dalla directory home "VistaHome"
 
