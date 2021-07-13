@@ -6,6 +6,8 @@ from listadipendenti.views.VistaListaDipendenti import VistaListaDipendenti
 from listaordine.views.VistaListaOrdine import VistaListaOrdini
 #from listamagazzino.views.VistaListaMagazzino import VistaListaMagazzino
 #from listafornitori.views.VistaListaFornitori import VistaListaFornitori
+from listaprenotazioni.view.VistaListaPrenotazioni import VistaListaPrenotazioni
+
 
 class VistaHome(QWidget):
 
@@ -17,7 +19,7 @@ class VistaHome(QWidget):
         #grid_layout.addWidget(self.get_generic_button("Lista magazzino"), 0, 1)
         #grid_layout.addWidget(self.get_generic_button("Lista Cliente"), 1, 0)
         grid_layout.addWidget(self.get_generic_button("Lista Dipendenti", self.go_lista_dipendenti), 0, 1)
-        #grid_layout.addWidget(self.get_generic_button("Lista Prenotazioni", self.go_lista_prenotazioni), 1, 0)
+        grid_layout.addWidget(self.get_generic_button("Lista Prenotazioni", self.go_lista_prenotazioni), 1, 0)
         #grid_layout.addWidget(self.get_generic_button("Lista fornitori"), 2, 1)
 
         self.setLayout(grid_layout)
@@ -45,9 +47,9 @@ class VistaHome(QWidget):
         self.vista_lista_dipendenti = VistaListaDipendenti()
         self.vista_lista_dipendenti.show()
 
-    #def go_lista_prenotazioni(self):
-        #self.vista_lista_prenotazioni = VistaListaPrenotazioni()
-        #self.vista_lista_prenotazioni.show()
+    def go_lista_prenotazioni(self):
+        self.vista_lista_prenotazioni = VistaListaPrenotazioni()
+        self.vista_lista_prenotazioni.show()
 
     #def go_lista_magazzino(self):
      #   self.vista_lista_magazzino= VistaListaMagazzino()

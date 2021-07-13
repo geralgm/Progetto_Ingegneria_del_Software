@@ -52,7 +52,7 @@ class VistaInserisciOrdine(QWidget):
                return
 
         self.controller.inserisci_ordine(Ordine(tipo, cod_fattura, cod_fornitore, quantita_totale
-                                               , data_ordine, data_arrivo,importo_totale, stato))
+                                               , data_ordine, data_arrivo,importo_totale))
 
 
         self.update_ui()
