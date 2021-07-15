@@ -11,6 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from listadipendenti.views.GUI_ListaDipendenti import VistaListaDipendenti
 from listaprenotazione.views.vistaprenotazione import VistaListaPrenotazioni
+from listaordini.views.VistaListaOrdine import VistaListaOrdini
 from PyQt5.QtWidgets import QWidget
 import images
 
@@ -204,6 +205,7 @@ class Home(QWidget):
         self.Button_Fornitori.setObjectName("Button_Fornitori")
         self.Button_Dipendenti.clicked.connect(self.go_lista_dipendenti)
         self.Button_Prenotazioni.clicked.connect(self.go_lista_prenotazioni)
+        self.Button_Ordini.clicked.connect(self.go_lista_ordini)
 
         self.retranslateUi()
         QtCore.QMetaObject.connectSlotsByName(self)
@@ -226,4 +228,11 @@ class Home(QWidget):
     def go_lista_prenotazioni(self):
         self.vista_lista_prenotazioni =  VistaListaPrenotazioni()
         self.vista_lista_prenotazioni.show()
+
+    def go_lista_ordini(self):
+        self.vista_lista_ordini = VistaListaOrdini()
+        self.vista_lista_ordini.show()
+
+
+
 
