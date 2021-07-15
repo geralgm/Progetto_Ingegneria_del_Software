@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>IMG_0171-770x420.jpg</file>
+    <file>texture.jpg</file>
+    <file>texture5.jpg</file>
+    <file>textureNuovoDip.jpg</file>
+    <file>logoDipendente.png</file>
+  </qresource>
+</RCC>

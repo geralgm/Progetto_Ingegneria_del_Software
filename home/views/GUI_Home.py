@@ -9,7 +9,7 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from listadipendenti.views.GUI_ListaDipendenti import ListaDipendenti
+from listadipendenti.views.GUI_ListaDipendenti import VistaListaDipendenti
 from PyQt5.QtWidgets import QWidget
 import images
 
@@ -218,5 +218,5 @@ class Home(QWidget):
 
 
     def go_lista_dipendenti(self):
-        self.vista_lista_dipendenti = ListaDipendenti()
+        self.vista_lista_dipendenti = VistaListaDipendenti()
         self.vista_lista_dipendenti.show()
