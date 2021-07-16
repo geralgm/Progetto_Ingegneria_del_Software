@@ -1,0 +1,89 @@
+[
+  {
+    "cod_fattura":"200AE001",
+    "stato dell'ordine": "Consegnato" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+    "quantita_totale": 2
+  },
+   {
+   "stato dell'ordine": "Pronto per consegnare" ,
+    "numero tavola": "5",
+    "data_ordine": "2021-06-02" ,
+    "importo_totale": 30,
+     "quantita_totale": 1
+  },
+   {
+    "cod_fattura":"200AE003" ,
+    "stato dell'ordine": "Pronto per consegnare" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 1
+  },
+   {
+    "cod_fattura":"200AE001" ,
+    "stato dell'ordine": "Consegnato" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
+  },
+   {
+    "cod_fattura":"200AE009" ,
+    "stato dell'ordine": "Consegnato" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
+  },
+   {
+    "cod_fattura":"200AE012" ,
+    "stato dell'ordine": "pronto per cosegnare" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
+  },
+   {
+    "cod_fattura":"200AE34" ,
+    "stato dell'ordine": "in preparazione" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
+   },
+   {
+    "cod_fattura":"200BE001" ,
+   "stato dell'ordine": "in preparazione" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
+  },
+  {
+    "cod_fattura":"200BE001" ,
+  "stato dell'ordine": "Consegnato" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
+  },
+  {
+    "cod_fattura":"2004E001" ,
+   "stato dell'ordine": "in preparazione" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
+  },
+  {
+    "cod_fattura":"200RE001" ,
+   "stato dell'ordine": "pronto per consegnare" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
+  }
+]

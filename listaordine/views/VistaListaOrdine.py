@@ -9,13 +9,21 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
-from PyQt5.QtWidgets import QWidget
+from PyQt5.QtCore import QRect
+from PyQt5.QtGui import QStandardItemModel, QStandardItem
+from PyQt5.QtWidgets import QWidget, QHBoxLayout, QListView
 
 import imaginOrdine
+from listaordine.controller.ControllerListaOrdini import ControllerListaOrdini
+from listaordine.views.VistaInserisciOrdine import VistaInserisciOrdine
+from ordine.views.VistaOrdine import VistaOrdine
+
 
 class VistaListaOrdini(QWidget):
     def __init__(self, parent=None):
-        super(VistaListaOrdini, self).__init__()
+        super(VistaListaOrdini, self).__init__(parent)
+
+        self.controller = ControllerListaOrdini()
 
         self.setObjectName("VistaListaOrdini")
         self.resize(730, 600)
@@ -29,9 +37,12 @@ class VistaListaOrdini(QWidget):
         self.sfondoOrdine.setScaledContents(True)
         self.sfondoOrdine.setObjectName("sfondoOrdine")
 
-        self.listView = QtWidgets.QListView(self)
-        self.listView.setGeometry(QtCore.QRect(30, 40, 571, 521))
-        self.listView.setObjectName("listView")
+        h_layout = QHBoxLayout()
+        self.list_view = QListView(self)
+        self.list_view.setGeometry(QRect(20, 80, 500, 450))
+        self.list_view.setObjectName("listWidget")
+        self.update_ui()
+        h_layout.addWidget(self.list_view)
 
         self.ButtonApri = QtWidgets.QPushButton(self)
         self.ButtonApri.setGeometry(QtCore.QRect(610, 40, 111, 70))
@@ -100,8 +111,40 @@ class VistaListaOrdini(QWidget):
                                                 "QPushButton#ButtonNuovoOrdine:hover {background-color:      #d1e0e0;}")
         self.ButtonNuovoOrdine.setObjectName("ButtonNuovoOrdine")
 
+        self.ButtonApri.clicked.connect(self.show_selected_info)
+        self.ButtonNuovoOrdine.clicked.connect(self.show_inserici_ordine)
+        self.ButtonHome.clicked.connect(self.close)
+
         self.retranslateUi()
         QtCore.QMetaObject.connectSlotsByName(self)
+
+    def update_ui(self):
+        self.listview_model = QStandardItemModel(self.list_view)
+        for ordine in self.controller.get_lista_ordini():
+            item = QStandardItem()
+            print(ordine.quantita_totale)
+            item.setText("Codice fattura: " + str(ordine.cod_fattura))
+
+            item.setEditable(False)
+            font = item.font()
+            font.setPointSize(25)
+            item.setFont(font)
+            self.listview_model.appendRow(item)
+        self.list_view.setModel(self.listview_model)
+
+    def show_selected_info(self):
+        if(len(self.list_view.selectedIndexes()) > 0):
+            selected = self.list_view.selectedIndexes()[0].row()
+            ordine_selezionato= self.controller.get_ordine_by_index(selected)
+            self.vista_ordine = VistaOrdine(ordine_selezionato, self.controller.elimina_ordine_by_id, self.update_ui)
+            self.vista_ordine.show()
+
+    def show_inserici_ordine(self):
+        self.vista_inserisci_ordine = VistaInserisciOrdine(self.controller, self.update_ui)
+        self.vista_inserisci_ordine.show()
+
+    def closeEvent(self, event):
+        self.controller.save_data()
 
     def retranslateUi(self):
         _translate = QtCore.QCoreApplication.translate

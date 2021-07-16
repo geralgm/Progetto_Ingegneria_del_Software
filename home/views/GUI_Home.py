@@ -11,7 +11,7 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from listadipendenti.views.GUI_ListaDipendenti import VistaListaDipendenti
 from listaprenotazioni.views.VistaListaPrenotazioni import VistaListaPrenotazioni
-from listaordini.views.VistaListaOrdine import VistaListaOrdini
+from listaordine.views.VistaListaOrdine import VistaListaOrdini
 from PyQt5.QtWidgets import QWidget
 import images
 
