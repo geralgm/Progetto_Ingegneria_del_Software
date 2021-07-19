@@ -21,14 +21,14 @@ class VistaInserisciOrdine(QWidget):
         self.get_form_entry("importo_totale", "importo totale")
         self.get_form_entry("stato", "Stato")
 
-        self.v_layout.addItem(QSpacerItem(20, 40, QSizePolicy.Minimum, QSizePolicy.Expanding))
+        self.v_layout.addItem(QSpacerItem(30, 50, QSizePolicy.Minimum, QSizePolicy.Expanding))
 
         btn_ok = QPushButton("OK")
         btn_ok.clicked.connect(self.inserisci_ordine)
         self.v_layout.addWidget(btn_ok)
 
         self.setLayout(self.v_layout)
-        self.setWindowTitle("New")
+        self.setWindowTitle("New Ordine")
 
     def get_form_entry(self, nome, tipo):
         self.v_layout.addWidget(QLabel(tipo))
@@ -37,6 +37,11 @@ class VistaInserisciOrdine(QWidget):
         self.v_layout.addWidget(current_text_edit)
 
     def inserisci_ordine(self):
+        for value in self.info.values():
+            if value.text() == "":
+               QMessageBox.critical(self, 'Inserisci tutte le informazioni richieste', QMessageBox.Ok, QMessageBox.Ok)
+
+               return
         tipo = self.info["tipo"].text()
         cod_fattura = self.info["cod_fattura"].text()
         cod_fornitore = self.info["cod_fornitore"].text()
@@ -46,13 +51,10 @@ class VistaInserisciOrdine(QWidget):
         importo_totale = self.info["importo_totale"].text()
         stato = self.info["stato"].text()
 
-        for value in self.info.values():
-            if value.text() == "":
-               QMessageBox.critical(self, 'Inserisci tutte le informazioni richieste', QMessageBox.Ok, QMessageBox.Ok)
-               return
-
         self.controller.inserisci_ordine(Ordine(tipo, cod_fattura, cod_fornitore, quantita_totale
-                                               , data_ordine, data_arrivo,importo_totale))
+                                                , data_ordine, data_arrivo, importo_totale))
+
+
 
 
         self.update_ui()
