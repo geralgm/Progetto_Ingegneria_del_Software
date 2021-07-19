@@ -1,0 +1,210 @@
+[
+  {
+    "codice_portata": "A01",
+    "nome": "Bruschette (Olive/Pomodoro)",
+    "prezzo": 3,
+    "stato": "A",
+    "tempo_preparazione": 10,
+    "porzioni": 25
+  },
+  {
+    "codice_portata": "A02",
+    "nome": "Carpaccio di bresaola rughetta e parmigiano",
+    "prezzo": 12,
+    "stato": "A",
+    "tempo_preparazione": 20,
+    "porzioni": 20
+  },
+  {
+    "codice_portata": "A03",
+    "nome": "Mozzarella di Bufala (250 gr.)",
+    "prezzo": 6,
+    "stato": "A",
+    "tempo_preparazione": 3,
+    "porzioni": 15
+  },
+  {
+    "codice_portata": "A04",
+    "nome": "Porchetta (100 gr.)",
+    "prezzo": 3,
+    "stato": "A",
+    "tempo_preparazione": 3,
+    "porzioni": 100
+  },
+  {
+    "codice_portata": "A05",
+    "nome": "Prosciutto Crudo",
+    "prezzo": 6,
+    "stato": "A",
+    "tempo_preparazione": 3,
+    "porzioni": 80
+  },
+  {
+    "codice_portata": "A06",
+    "nome": "Scamorza",
+    "prezzo": 8,
+    "stato": "A",
+    "tempo_preparazione": 3,
+    "porzioni": 30
+  },
+  {
+    "codice_portata": "A07",
+    "nome": "Uovo sfrittellato al Tartufo",
+    "prezzo": 8,
+    "stato": "A",
+    "tempo_preparazione": 5,
+    "porzioni": 80
+  },
+  {
+    "codice_portata": "A08",
+    "nome": "Verdure grigliate",
+    "prezzo": 5,
+    "stato": "A",
+    "tempo_preparazione": 20,
+    "porzioni": 50
+  },
+  {
+    "codice_portata": "P01",
+    "nome": "Amatriciana",
+    "prezzo": 8,
+    "stato": "P",
+    "tempo_preparazione": 35,
+    "porzioni": 90
+  },
+  {
+    "codice_portata": "P02",
+    "nome": "Cacio e pepe",
+    "prezzo": 8,
+    "stato": "P",
+    "tempo_preparazione": 20,
+    "porzioni": 90
+  },
+  {
+    "codice_portata": "P03",
+    "nome": "Carbonara",
+    "prezzo": 8,
+    "stato": "P",
+    "tempo_preparazione": 25,
+    "porzioni": 90
+  },
+  {
+    "codice_portata": "P04",
+    "nome": "Gricia",
+    "prezzo": 8,
+    "stato": "P",
+    "tempo_preparazione": 25,
+    "porzioni": 90
+  },
+  {
+    "codice_portata": "P05",
+    "nome": "Penne all'arrabbiata",
+    "prezzo": 8,
+    "stato": "P",
+    "tempo_preparazione": 25,
+    "porzioni": 90
+  },
+  {
+    "codice_portata": "P06",
+    "nome": "Penne all'arrabbiata con Tonno",
+    "prezzo": 10,
+    "stato": "P",
+    "tempo_preparazione": 25,
+    "porzioni": 90
+  },
+  {
+    "codice_portata": "P07",
+    "nome": "Pomodoro e basilico",
+    "prezzo": 7,
+    "stato": "P",
+    "tempo_preparazione": 20,
+    "porzioni": 90
+  },
+  {
+    "codice_portata": "P08",
+    "nome": "Spaghetti ajo e ojo",
+    "prezzo": 7,
+    "stato": "P",
+    "tempo_preparazione": 15,
+    "porzioni": 90
+  },
+  {
+    "codice_portata": "S01",
+    "nome": "Coda alla vaccinara",
+    "prezzo": 12,
+    "stato": "S",
+    "tempo_preparazione": 350,
+    "porzioni": 40
+  },
+  {
+    "codice_portata": "S02",
+    "nome": "Coratella d'abbacchio",
+    "prezzo": 10,
+    "stato": "S",
+    "tempo_preparazione": 55,
+    "porzioni": 35
+  },
+  {
+    "codice_portata": "S03",
+    "nome": "Fagioli con le cotiche",
+    "prezzo": 10,
+    "stato": "S",
+    "tempo_preparazione": 60,
+    "porzioni": 50
+  },
+  {
+    "codice_portata": "S04",
+    "nome": "Melanzane alla parmigiana",
+    "prezzo": 8,
+    "stato": "S",
+    "tempo_preparazione": 140,
+    "porzioni": 50
+  },
+  {
+    "codice_portata": "S05",
+    "nome": "Polpettine al sugo",
+    "prezzo": 9,
+    "stato": "S",
+    "tempo_preparazione": 50,
+    "porzioni": 40
+  },
+  {
+    "codice_portata": "S06",
+    "nome": "Scaloppine al limone",
+    "prezzo": 9,
+    "stato": "S",
+    "tempo_preparazione": 20,
+    "porzioni": 40
+  },
+  {
+    "codice_portata": "D01",
+    "nome": "Crema Catalana fatta in casa",
+    "prezzo": 5,
+    "stato": "D",
+    "tempo_preparazione": 25,
+    "porzioni": 30
+  },
+  {
+    "codice_portata": "D02",
+    "nome": "Tiramisu",
+    "prezzo": 5,
+    "stato": "D",
+    "tempo_preparazione": 40,
+    "porzioni": 30
+  },
+  {
+    "codice_portata": "D03",
+    "nome": "Crostata artigianale",
+    "prezzo": 4,
+    "stato": "D",
+    "tempo_preparazione": 80,
+    "porzioni": 35
+  },
+  {
+    "codice_portata": "D04",
+    "nome": "Sorbetto Limone",
+    "prezzo": 4,
+    "stato": "D",
+    "tempo_preparazione": 50,
+    "porzioni": 25
+  }
+]

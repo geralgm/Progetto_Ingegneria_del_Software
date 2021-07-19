@@ -12,6 +12,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from listadipendenti.views.GUI_ListaDipendenti import ListaDipendenti
 from PyQt5.QtWidgets import QWidget
 import images
+from listaportate.view.GUI_ListaPortate import GUI_ListaPortate
+
 
 class Home(QWidget):
     def __init__(self, parent=None):
@@ -148,9 +150,9 @@ class Home(QWidget):
                                                 "QPushButton#Button_Dipendenti:hover {background-color:      #ffe066;}\n"
                                                 "")
         self.Button_Dipendenti.setObjectName("Button_Dipendenti")
-        self.Button_Magazzino = QtWidgets.QPushButton(self)
-        self.Button_Magazzino.setGeometry(QtCore.QRect(390, 340, 250, 100))
-        self.Button_Magazzino.setStyleSheet("QPushButton#Button_Magazzino{\n"
+        self.Button_Menu = QtWidgets.QPushButton(self)
+        self.Button_Menu.setGeometry(QtCore.QRect(390, 340, 250, 100))
+        self.Button_Menu.setStyleSheet("QPushButton#Button_Magazzino{\n"
                                             "  background-color: #663300;\n"
                                             "  border-radius: 45px;\n"
                                             "  color: white;\n"
@@ -176,7 +178,7 @@ class Home(QWidget):
                                             "\n"
                                             "\n"
                                             "")
-        self.Button_Magazzino.setObjectName("Button_Magazzino")
+        self.Button_Menu.setObjectName("Button_Magazzino")
 
         self.Button_Fornitori = QtWidgets.QPushButton(self)
         self.Button_Fornitori.setGeometry(QtCore.QRect(390, 440, 250, 100))
@@ -202,7 +204,8 @@ class Home(QWidget):
                                             "")
         self.Button_Fornitori.setObjectName("Button_Fornitori")
         self.Button_Dipendenti.clicked.connect(self.go_lista_dipendenti)
-
+        self.Button_Menu.clicked.connect(self.go_lista_portate)
+        self.setWindowTitle("Home")
         self.retranslateUi()
         QtCore.QMetaObject.connectSlotsByName(self)
 
@@ -212,7 +215,7 @@ class Home(QWidget):
         self.Button_Clienti.setText(_translate("Home", "Clienti"))
         self.Button_Prenotazioni.setText(_translate("Home", "Prenotazioni"))
         self.Button_Dipendenti.setText(_translate("Home", "Dipendenti"))
-        self.Button_Magazzino.setText(_translate("Home", "Magazzino"))
+        self.Button_Menu.setText(_translate("Home", "Menù"))
         self.Button_Fornitori.setText(_translate("Home", "Fornitori"))
 
 
@@ -220,3 +223,7 @@ class Home(QWidget):
     def go_lista_dipendenti(self):
         self.vista_lista_dipendenti = ListaDipendenti()
         self.vista_lista_dipendenti.show()
+
+    def go_lista_portate(self):
+        self.vista_lista_portate= GUI_ListaPortate()
+        self.vista_lista_portate.showMaximized()
