@@ -21,12 +21,12 @@ class ListaOrdini():
             with open('listaordine/data/DatabaseOrdini.json') as f:
                 lista_ordine_json = json.load(f)
                 for ordine_da_caricare in lista_ordine_json:
-                    self.lista_ordini.append(Ordine(ordine_da_caricare['cod_fattura'],
-                                                    ordine_da_caricare['cod_fornitore'], ordine_da_caricare['data_ordine'],
-                                                    ordine_da_caricare['stato'], ordine_da_caricare['importo_totale'],
-                                                      ordine_da_caricare["quantita_totale"], ordine_da_caricare['data_arrivo']))
+                    self.lista_ordini.append(Ordine(ordine_da_caricare['cod_fattura'],  ordine_da_caricare['stato'],
+                                                                ordine_da_caricare['data_ordine'],
+                                                                ordine_da_caricare['importo_totale'],
+                                                                ordine_da_caricare["quantita_totale"]))
 
-    def aggiungi_ordine(self, ordine=None):
+    def aggiungi_ordine(self, ordine):
         self.lista_ordini.append(ordine)
 
     def get_lista_ordini(self):

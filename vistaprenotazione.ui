@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>730</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>730</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>730</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QLabel" name="sfondolistaprenotazione">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>730</width>
+     <height>600</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="imaginePrenotazione.qrc">:/newPrefix/imagine.jpeg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>571</width>
+     <height>521</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonApri">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>40</y>
+     <width>111</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#buttonApri{
+  background-color:#293d3d;
+  border-radius: 30px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+QPushButton#buttonApri:pressed{
+ background-color: white; 
+  color: black; 
+  border: 3px solid #4CAF50;
+}
+QPushButton#buttonApri:hover {background-color: 	 #d1e0e0;}</string>
+   </property>
+   <property name="text">
+    <string>Apri</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonHome">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>180</y>
+     <width>111</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#buttonHome{
+  background-color:#293d3d;
+  border-radius: 30px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+QPushButton#buttonHome:pressed{
+ background-color: white; 
+  color: black; 
+  border: 3px solid #4CAF50;
+}
+QPushButton#buttonHome:hover {background-color: 	 #d1e0e0;}</string>
+   </property>
+   <property name="text">
+    <string></string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonNuovprenotazione">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>110</y>
+     <width>111</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#buttonNuovprenotazione{
+  background-color:#293d3d;
+  border-radius: 30px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+QPushButton#buttonNuovprenotazione:pressed{
+ background-color: white; 
+  color: black; 
+  border: 3px solid #4CAF50;
+}
+QPushButton#buttonNuovprenotazione:hover {background-color: 	 #d1e0e0;}</string>
+   </property>
+   <property name="text">
+    <string>Nuova</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="imaginePrenotazione.qrc"/>
+ </resources>
+ <connections/>
+</ui>

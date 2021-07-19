@@ -1,101 +1,89 @@
 [
   {
-    "cod_fattura":"200AE001" ,
-    "cod_fornitore": "44248" ,
-    "stato": "In arrivo" ,
-    "data_ordine": "2020-09-26" ,
-    "importo_totale": 5000,
-    "data_arrivo": "2021-05-21",
-     "quantita_totale": 1230
+    "cod_fattura":"200AE001",
+    "stato dell'ordine": "Consegnato" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+    "quantita_totale": 2
   },
    {
-    "cod_fattura":"200AE002" ,
-    "cod_fornitore": "44249" ,
-    "stato": "In arrivo" ,
-    "data_ordine": "2021-04-26" ,
-    "importo_totale": 500,
-     "data_arrivo": "2021-04-28",
-      "quantita_totale": 1567
+   "stato dell'ordine": "Pronto per consegnare" ,
+    "numero tavola": "5",
+    "data_ordine": "2021-06-02" ,
+    "importo_totale": 30,
+     "quantita_totale": 1
   },
    {
     "cod_fattura":"200AE003" ,
-    "cod_fornitore": "44246" ,
-    "stato": "In consegna" ,
-    "data_ordine": "2020-02-06" ,
-    "importo_totale": 2000,
-     "data_arrivo": "2020-02-07",
-      "quantita_totale": "1436"
+    "stato dell'ordine": "Pronto per consegnare" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 1
   },
    {
     "cod_fattura":"200AE001" ,
-    "cod_fornitore": "44248" ,
-    "stato": "In arrivo" ,
-    "data_ordine": "2020-09-26" ,
-    "importo_totale": 5000,
-     "data_arrivo": "2020-03-01",
-      "quantita_totale": "457 kg"
+    "stato dell'ordine": "Consegnato" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
   },
    {
     "cod_fattura":"200AE009" ,
-    "cod_fornitore": "44456" ,
-    "stato": "In arrivo" ,
-    "data_ordine": "2020-02-12" ,
-    "importo_totale": 5345,
-     "data_arrivo": "2020-02-22",
-      "quantita_totale": "123 kg"
+    "stato dell'ordine": "Consegnato" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
   },
    {
     "cod_fattura":"200AE012" ,
-    "cod_fornitore": "44282" ,
-    "stato": "Consegnato" ,
-    "data_ordine": "2021-02-26" ,
-    "importo_totale": 7000,
-     "data_arrivo": "2021-03-02",
-      "quantita_totale": "378 kg"
+    "stato dell'ordine": "pronto per cosegnare" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
   },
    {
     "cod_fattura":"200AE34" ,
-    "cod_fornitore": "56248" ,
-    "stato": "In arrivo" ,
-    "data_ordine": "2020-09-26" ,
-    "importo_totale": 700,
-     "data_arrivo": "2020-12-02",
-      "quantita_totale": "4889 kg"
+    "stato dell'ordine": "in preparazione" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
    },
    {
     "cod_fattura":"200BE001" ,
-    "cod_fornitore": "53248" ,
-    "stato": "In consegna" ,
-    "data_ordine": "2020-10-15" ,
-    "importo_totale": 1500,
-     "data_arrivo": "2020-10-22",
-      "quantita_totale": "786 kg"
+   "stato dell'ordine": "in preparazione" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
   },
   {
     "cod_fattura":"200BE001" ,
-    "cod_fornitore": "53248" ,
-    "stato": "In consegna" ,
-    "data_ordine": "2020-10-15" ,
-    "importo_totale": 1500,
-    "data_arrivo": "2020-10-22",
-     "quantita_totale": "923 kg"
+  "stato dell'ordine": "Consegnato" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
   },
   {
     "cod_fattura":"2004E001" ,
-    "cod_fornitore": "23248" ,
-    "stato": "Consegnato" ,
-    "data_ordine": "2020-10-15" ,
-    "importo_totale": 1545,
-    "data_arrivo": "2020-10-26",
-    "quantita_totale": "987 kg"
+   "stato dell'ordine": "in preparazione" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
   },
   {
     "cod_fattura":"200RE001" ,
-    "cod_fornitore": "53248" ,
-    "stato": "Ordinato" ,
-    "data_ordine": "2021-10-15" ,
-    "importo_totale": 6500,
-    "data_arrivo": "2021-10-30",
-     "quantita_totale": "297 kg"
+   "stato dell'ordine": "pronto per consegnare" ,
+    "numero tavola": "10",
+    "data_ordine": "2021-05-26" ,
+    "importo_totale": 50,
+     "quantita_totale": 2
   }
 ]
