@@ -12,6 +12,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 from listadipendenti.views.GUI_ListaDipendenti import VistaListaDipendenti
 from PyQt5.QtWidgets import QWidget
 import images
+from listafornitori.view.VistaListaFornitori import VistaListaFornitori
 from listaportate.view.GUI_ListaPortate import GUI_ListaPortate
 
 
@@ -227,3 +228,7 @@ class Home(QWidget):
     def go_lista_portate(self):
         self.vista_lista_portate= GUI_ListaPortate()
         self.vista_lista_portate.showMaximized()
+
+    def go_lista_fornitori(self):
+        self.VistaListaFornitori= VistaListaFornitori()
+        self.VistaListaFornitori.showMaximized()
