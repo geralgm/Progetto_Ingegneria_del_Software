@@ -206,6 +206,7 @@ class Home(QWidget):
         self.Button_Fornitori.setObjectName("Button_Fornitori")
         self.Button_Dipendenti.clicked.connect(self.go_lista_dipendenti)
         self.Button_Menu.clicked.connect(self.go_lista_portate)
+        self.Button_Fornitori.clicked.connect(self.go_lista_fornitori)
         self.setWindowTitle("Home")
         self.retranslateUi()
         QtCore.QMetaObject.connectSlotsByName(self)
